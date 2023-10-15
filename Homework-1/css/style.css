@@ -1,0 +1,259 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.header {
+    background: url(../media/Rectangle-2.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    max-width: 100%;
+    height: 740px;
+    /* background-color: #404149; */
+}
+
+.header .info {
+    padding: 192px;
+    text-align: center;
+}
+
+.header .info h1 {
+    color: #fff;
+    font-family: Oswald;
+    font-weight: 500;
+    font-size: 64px;
+    letter-spacing: 1.28px;
+}
+
+.header .info p {
+    color: #fff;
+    margin-top: 30px;
+    font-family: Oswald;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.container {
+    background-color: #fff;
+    width: 1110px;
+    height: 300px;
+    margin: 0 auto;
+}
+
+.box {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    padding: 57px;
+}
+
+.box_item {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.container .box .box-item h3 {
+    text-align: center;
+    font-family: Oswald;
+    font-weight: 500;
+    font-size: 72px;
+    color: #F7654A;
+}
+
+.container .box .box-item h4 {
+    text-align: center;
+    font-family: Oswald;
+    font-weight: 500;
+    font-size: 36px;
+    color: #000;
+    text-transform: uppercase;
+}
+
+.container .box .box-item p {
+    text-align: center;
+    font-family: Oswald;
+    font-weight: 500;
+    font-size: 18px;
+    color: #999;
+}
+
+.our_projects {
+    padding: 200px 0px 0px 0px;
+    width: 1110px;
+    height: 681px;
+    margin: 0 auto;
+    margin-bottom: 300px;
+}
+
+.our_projects .title {
+    font-size: 36px;
+    font-weight: 500;
+    font-family: Oswald;
+    color: #404149;
+    text-align: center;
+}
+
+.our_projects .project_cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.our_projects .project_cards .card {
+    background-repeat: no-repeat;
+    width: 350px;
+    height: 380px;
+    display: flex;
+    flex-direction: column;
+    padding: 36px;
+    padding-bottom: 10px;
+}
+
+.our_projects .project_cards .card h3 {
+    font-size: 24px;
+    font-weight: 500;
+    font-family: Oswald;
+    color: #404149;
+    padding: 66px 238px 20px 0px;
+}
+
+.our_projects .project_cards .card p {
+    color: #999999;
+    font-weight: 400;
+    font-size: 16px;
+    font-family: Open Sans;
+}
+
+.orange_line {
+    /* background: url(../media/Rectangle\ 3.svg); */
+    background-color: #F7654A;
+    width: 100%;
+    height: 180px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+
+.orange_line h2 {
+    font-family: Oswald;
+    font-size: 48px;
+    font-weight: 700;
+    color: #fff;
+}
+
+.orange_line h3 {
+    font-family: Oswald;
+    font-size: 24px;
+    font-weight: 700;
+    color: #fff;
+}
+
+.orange_line .btn button {
+    width: 275px;
+    height: 50px;
+}
+
+.construction {
+    padding: 200px 0px 0px 0px;
+    width: 1110px;
+    height: 681px;
+    margin: 0 auto;
+}
+
+.construction .question {
+    color: #000;
+    font-family: Oswald;
+    font-size: 36px;
+    font-weight: 500;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.construction .construction_cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.construction .construction_cards .cards {
+    width: 350px;
+    height: 250px;
+    background-color: #F7F7F7;
+    display: flex;
+    flex-direction: column;
+    padding: 60px 145px 150px 145px;
+}
+
+.construction .construction_cards .cards h4 {
+    font-size: 21px;
+    font-weight: 500;
+    font-family: Oswald;
+    color: #000;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+footer {
+    padding: 80px 450px;
+    gap: 50px;
+}
+
+footer div h2 {
+    font-size: 36px;
+    font-weight: 500;
+    font-family: Oswald;
+    margin-top: 200px;
+    margin-bottom: 55px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+footer .contact_blocks {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    font-size: 24px;
+    font-weight: 500;
+    font-family: Oswald;
+}
+
+footer .contact_blocks div h3 {
+    font-weight: 500;
+    font-size: 24px;
+    color: #999999;
+    margin-bottom: 25px;
+}
+
+footer .contact_blocks div img {
+    margin-bottom: 20px;
+    height: 50px;
+}
+
+footer .contact_blocks div {
+    text-align: center;
+}
+
+footer .contact_blocks div:last-child p {
+    color: #F7654A;
+}
+
+@media screen and (min-width: 1440px) {
+    .container {
+        gap: 20px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .contact_blocks {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        gap: 20px;
+        margin-bottom: 20px;
+    }
+}
